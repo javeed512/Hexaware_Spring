@@ -18,15 +18,11 @@ public class AppConfig {
 	@Autowired
 	Environment env;
 
-	@Bean
+	@Bean 
 	public DataSource datasource() {
 
 		DriverManagerDataSource datasource = new DriverManagerDataSource();
 
-			System.out.println(env.getProperty("url"));
-			
-			System.out.println(env.getProperty("uname"));
-		
 		datasource.setUrl(env.getProperty("url"));
 		datasource.setUsername(env.getProperty("uname"));
 		datasource.setPassword(env.getProperty("password"));
