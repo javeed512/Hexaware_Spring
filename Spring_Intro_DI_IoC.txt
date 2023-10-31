@@ -67,12 +67,14 @@ and what all objects needs to inject.
 
 XmlBeanFactory --> IOC Container for xml config
 
-ApplicationConfig(I) ---> AnnotationConfigApplicationContext(C)  // IOC Container for annotation 
+ApplicationContext(I) ---> AnnotationConfigApplicationContext(C)  // IOC Container for annotation 
 
 
 
 Spring Annotation:
 
+Stereo Type annotations
+------------------------
 @Component      // use for pojo/beans  classes
 @Service       // use for service classes
 @Repository    // repository or DAO classes
@@ -83,6 +85,21 @@ Spring Annotation:
 
 
 @Autowire // auto wiring or auto DI
+
+
+Auto-Wiring:
+1. ByName
+2. ByType
+
+
+Scopes:
+========
+1. Singleton // default  (Create and return always same or single obj)
+2. Prototype (Prototype always creates a new object and return it , irrespective of obj exist or does not exist)
+3. Request
+4. Session
+
+
 
 
 
