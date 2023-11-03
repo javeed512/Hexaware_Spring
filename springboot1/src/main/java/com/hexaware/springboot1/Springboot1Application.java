@@ -9,8 +9,8 @@ import com.hexaware.springboot1.entity.Employee;
 @SpringBootApplication
 public class Springboot1Application {
 
-	public static void main(String[] args) {
-	ApplicationContext context =	SpringApplication.run(Springboot1Application.class, args);
+	public static void main(String[] ar) {
+	ApplicationContext context =	SpringApplication.run(Springboot1Application.class, ar);
 	
 		Employee  emp =		context.getBean(Employee.class);
 	

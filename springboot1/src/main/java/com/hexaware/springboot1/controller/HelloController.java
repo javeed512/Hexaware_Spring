@@ -2,6 +2,7 @@ package com.hexaware.springboot1.controller;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 import com.hexaware.springboot1.entity.Employee;
@@ -11,7 +12,7 @@ import com.hexaware.springboot1.entity.Employee;
 public class HelloController {  // HelloController internally act as servlet
 	
 	
-		@RequestMapping("/hello")
+		@RequestMapping(path="/hello",method = RequestMethod.GET)
 		@ResponseBody
 		public String sayHello() {
 			
