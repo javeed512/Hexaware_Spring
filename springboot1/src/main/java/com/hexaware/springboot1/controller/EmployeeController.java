@@ -1,5 +1,7 @@
 package com.hexaware.springboot1.controller;
 
+import javax.servlet.http.HttpSession;
+
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
@@ -34,34 +36,58 @@ public class EmployeeController {
 	 * }
 	 */
 	
+	/*
+	 * @RequestMapping(path = "/add", method = RequestMethod.POST)
+	 * 
+	 * @ResponseBody public String addEmployee(@RequestParam int eid, @RequestParam
+	 * String ename, @RequestParam double salary) {
+	 * 
+	 * Employee emp = new Employee(eid, ename, salary);
+	 * 
+	 * // service layer --> dao layer ---> DB
+	 * 
+	 * // service.add(emp)
+	 * 
+	 * 
+	 * return emp.toString();
+	 * 
+	 * 
+	 * }
+	 */
+	
+		/*
+		 * @RequestMapping(path = "/getall", method = RequestMethod.GET)
+		 * 
+		 * @ResponseBody public String getAll() {
+		 * 
+		 * //List list = service.getAll(); ----> dao.getAll(); ----> select * from
+		 * table;
+		 * 
+		 * 
+		 * 
+		 * //return list.toString(); }
+		 */
+	
+	
+	
 		@RequestMapping(path = "/add", method = RequestMethod.POST)
-		@ResponseBody
-		public String addEmployee(@RequestParam int eid, @RequestParam String ename, @RequestParam double salary) {
+	
+		public String insertEmployee(@RequestParam int eid, @RequestParam String ename, @RequestParam double salary,HttpSession session) {
 			
 			 Employee emp = new Employee(eid, ename, salary);
 			
-			 // service layer  --> dao layer ---> DB
-			 
-			 // service.add(emp)
+			 session.setAttribute("emp", emp);
+			 	
 			 
 			
-			return emp.toString();
+			return "display";
 			
 			
 		}
 	
-		@RequestMapping(path = "/getall", method = RequestMethod.GET)
-		@ResponseBody
-		public String  getAll() {
-			
-			
-			
-			
-		}	
-	
-	
-	
-	
+		
+		
+		
 	
 	
 

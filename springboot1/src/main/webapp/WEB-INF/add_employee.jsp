@@ -14,7 +14,8 @@
 			ENAME : <input type="text"  name="ename"> <br/>
 			SALARY : <input type="number"  name="salary"> <br/>
 			
-			<button type="submit">Add</button>
+			<button type="submit">Add Employee</button>
+		
 			
 			
 		</form>
