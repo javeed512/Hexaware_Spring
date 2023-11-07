@@ -37,9 +37,35 @@ public class EmloyeeRestController {
 			
 		}
 	
+		@GetMapping("/get/salarygt/{salary}")
+		public List<Employee>  getBySalaryGT(@PathVariable  double salary){
+			
+			return  service.getEmployeesBySalaryGT(salary);
+			
+		}
+		
+		
+		@GetMapping("/get/sorted/{salary}")
+		public List<Employee>  getBySalaryGTSorted(@PathVariable  double salary){
+			
+			return  service.getEmployeesGTSorted(salary);
+			
+		}
+		
+		
+		
+		
+		@GetMapping("/get/sorted/doj")
+		public List<Employee>  getBySorted(){
+			
+			return  service.getSorted();
+			
+		}
+		
+		
 	
-	
-	
+		
+		
 	
 	@DeleteMapping("/delete/{eid}")
 	public String deleteById(@PathVariable Long eid) {

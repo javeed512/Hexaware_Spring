@@ -22,6 +22,13 @@ public interface IEmployeeService {
 	public List<Employee>  getAllEmployees();
 	
 	
+	public List<Employee>  getEmployeesBySalaryGT(double salary);
+	
+	
+	public List<Employee>  getEmployeesGTSorted(double salary);
+	
+	
+	public  List<Employee>   getSorted();
 	
 	
 	

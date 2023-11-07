@@ -38,6 +38,32 @@ void deleteById(ID id)
 void delete(T entity)
 
 
+--------------------------------------
+
+In Spring Data JPA Repository we can declare methods with any property.
+
+1.  Type  findByPropertyName(parameter);
+
+  Ex: findBySalary(double salary);  // select * from employee_details where salary = ?;
+
+2. GreaterThan or LessThan
+
+ Ex:   findBySalaryGreaterThan(double inputsalary); //  select * from employee_details where salary > inputsalary;  
+  Ex:   findBySalaryLessThan(double inputsalary); //  select * from employee_details where salary <  inputsalary;  
+
+In  PagingandSortingRepository we have few methods which help us to select all records in sorted order based on any property.
+
+  findAll(Sorted.by("propertyName"));
+ findAll(Sort.by(Direction.DESC, "doj"));
+
+NOTE: Just call above methods in service layer they already exists in  PagingandSortingRepository
+    
+
+
+
+
+
+
 
 
 
