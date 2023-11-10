@@ -1,7 +1,0 @@
-Bcrypt is a cryptographic hash function designed for password hashing and safe storing in the backend of applications in a way that is less susceptible to dictionary-based cyberattacks. It was created in 1999 by Niels Provos and David Mazières, using the Blowfish cipher algorithm as its base.
-
-Bcrypt runs a complex hashing process, during which a user’s password is transformed into a fixed-length thread of characters. It uses a one-way hash function, meaning that once the password is hashed, it cannot be reversed to its original form. Every time the user logs into their account, bcrypt hashes their password anew and compares the new hash value to the version stored in the system’s memory to check if the passwords match.
-
-Instead of simply hashing the given password, bcrypt adds a random piece of data, called salt, to create a unique hash that is almost impossible to break with automated guesses during hash dictionary and brute force attacks.
-
-Bcrypt also stands out among other hashing algorithms because it uses a cost factor. With it, you can determine the number of password iterations and hashing rounds to be performed, increasing the amount of time, effort, and computational resources needed to calculate the final hash value. The cost factor makes bcrypt a slow algorithm that takes significantly more time to produce a hash key, turning it into a safe password-storing tool.
