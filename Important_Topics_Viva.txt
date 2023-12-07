@@ -1,0 +1,113 @@
+Important topics:
+================
+
+Git commands 
+add,commit,push,pull,branch,merge,clone
+
+CoreJava
+OOPs , Collections,
+Java8 Features
+functional interface,static,default methods in interface
+java.time package 
+method and constructor reference  (::)
+Lambda Expressions
+Stream API 
+map,filter,reduce....
+Basics of Threads and File concepts
+
+Java-11 Features
+
+Basics of Maven 
+
+SQL Basics
+DML , DDL 
+Select queries , Sub queries , Joins
+
+
+What is ORM?
+Hibernate Basics
+Types of Cache in Hibernate
+Primary and Secondary Cache and their differences
+CRUD Operations in Hibernate
+
+Spring Core :
+Dependency Injection , IOC , Types DIs
+
+What is Spring framework , Spring MVC
+
+Basics of JSP
+
+What is REST API / RESTful Web services
+
+Http GET,POST,PUT,DELETE
+
+Spring Boot
+Spring Boot Data JPA (Repository,CrudRepository,PagingAndSortingRepository,JpaRepository)
+Entities and Mappings (one to one , one to many, many to many)
+Spring Security
+JWT
+OAuth2
+Unit Testing
+Using Postman/Swagger-ui
+
+What is Microservice and ARchitecture?
+What is monolithic and microservice difference?
+RestTemplate or WebClient
+What is LoadBalancing and Circuit Breakers in Microservices
+
+Angular:
+Flow of Angular application 
+Data Binding
+Directives and Types 
+Pipes
+Services and Injecting services in construtors
+Routings and reading data from routing params
+RouterGuard
+Login and Registration with JWT
+AuthGuards
+
+Forms 
+Template Driven and Reactive Forms
+
+Sharing Data between Parent and Child
+@Input  and @Output
+
+Calling Rest APIs from Backend
+HttpClient get,post,put,delete  --> Observable and asyn response
+
+
+NgRx Topic
+action,reducer,selector ....
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
